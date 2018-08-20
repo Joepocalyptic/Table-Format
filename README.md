@@ -59,5 +59,5 @@ ___
 
 About Me:
 
-Join my public Discord [here](www.discord.gg/XmPhseX).
-Check out my YouTube Channel [here](www.bit.ly/joeisanub).
+Join my public Discord [here](www.discord.gg/XmPhseX).  
+Check out my YouTube Channel [here](www.bit.ly/joeisanub).  
