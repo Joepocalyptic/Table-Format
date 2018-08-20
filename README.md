@@ -7,7 +7,7 @@ Let's see how to use it!
 ---
 
 Newlines are read as the table row separator. You may choose the table data separator within the program itself. Here's
-a valid file if your data separator was '**_:_**':
+a valid file if your data separator was '**:**':
 
 ___
 
@@ -28,7 +28,7 @@ This will turn into a formatted table with your choice of BBCode, HTML, compacte
 
 If your separator doesn't happen to be **:**, just set it to whatever you preformatted! Remember, each table row is a newline ('\n' in the code), but the term/definition separator is defined by you before the formatting takes place.
 
-Let's look at what this would process into assuming HTML formatting with table tagging, aesthetic indenting and newlines, and a '**_:_**' separator:
+Let's look at what this would process into assuming HTML formatting with table tagging, aesthetic indenting and newlines, and a '**:**' separator:
 
 ___
 ```html
