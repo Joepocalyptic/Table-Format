@@ -1,4 +1,4 @@
-# Table Formatter
+# Table-Format
 #### This tool is a Table Formatter that imports raw text from a file and turns it into a BBCode or HTML table. More languages are soon to come! This program is made with Java, more specifically the JavaFX Application libraries. You will need a valid [JRE](https://www.java.com/en/download/manual.jsp) to run it.
 ###### _Previously known as GlossaryFX._
 
