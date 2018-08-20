@@ -16,5 +16,5 @@ a valid file if your data separator was ':':
 19:20
 ```
 
-This will turn into a formatted table with your choice of table tagging or not, as shown here:
+This will turn into a formatted table with your choice of table tagging or not.
 
