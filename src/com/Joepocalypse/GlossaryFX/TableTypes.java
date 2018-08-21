@@ -6,7 +6,7 @@ import java.util.regex.PatternSyntaxException;
 
 public class TableTypes {
 
-    public static String tableGen(final String separator, final Tag tableTag, final Tag rowTag, final Tag dataTag, String input, boolean t){
+    public static String tableGen(final String separator, final Tag tableTag, final Tag rowTag, final Tag dataTag, String input, boolean t, boolean n){
         String tableTagOpen = tableTag.getOpenTag();
         String tableTagClose = tableTag.getCloseTag();
 
@@ -34,7 +34,9 @@ public class TableTypes {
                     if (!"".equals(data)) {
                         table.append(dataTagOpen);
                         table.append(data);
-                        table.append(ct[0]);
+                        if (n) {
+                            table.append(ct[0]);
+                        }
                         table.append(dataTagClose);
                         ct[0] = ct[0] + 1;
                     }
@@ -58,16 +60,18 @@ public class TableTypes {
                 new Tag("[tr]", "[/tr]"),
                 new Tag("[td]", "[/td]"),
                 input,
-                t);
+                t,
+                false);
     }
 
     public static String aestheticBBTable (final String separator, String input, boolean t){
         return tableGen(separator,
                 new Tag("[table]\n", "[/table]\n"),
-                new Tag("[tr]\n", "[/tr]\n"),
-                new Tag("[td]", "[/td]\n"),
+                new Tag("    [tr]\n", "    [/tr]\n"),
+                new Tag("        [td]", "[/td]\n"),
                 input,
-                t);
+                t,
+                false);
     }
 
     public static String compactHTMLTable(final String separator, String input, boolean t) {
@@ -76,14 +80,16 @@ public class TableTypes {
                 new Tag("<tr>", "</tr>"),
                 new Tag("<tr>", "</td>"),
                 input,
-                t);
+                t,
+                false);
     }
     public static String aestheticHTMLTable (final String separator, String input, boolean t) {
         return tableGen(separator,
                 new Tag("<table>\n", "</table>\n"),
-                new Tag("<tr>\n", "</tr>\n"),
-                new Tag("<td>", "</td>\n"),
+                new Tag("    <tr>\n", "    </tr>\n"),
+                new Tag("        <td>", "</td>\n"),
                 input,
-                t);
+                t,
+                false);
     }
 }
