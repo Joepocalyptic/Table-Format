@@ -2,12 +2,14 @@
 #### This tool is a Table Formatter that imports raw text from a file and turns it into a BBCode or HTML table. More languages are soon to come! This program is made with Java, more specifically the JavaFX Application libraries. You will need a valid [JRE](https://www.java.com/en/download/manual.jsp) to run it.
 ###### _Previously known as GlossaryFX._
 
-Let's see how to use it!
+Let's see how you use it!
 
 ---
 
+
 Newlines are read as the table row separator. You may choose the table data separator within the program itself. Here's
 a valid file if your data separator was '**:**':
+
 
 ___
 
