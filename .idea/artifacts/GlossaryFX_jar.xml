@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="GlossaryFX:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/GlossaryFX_jar</output-path>
-    <root id="archive" name="GlossaryFX.jar">
-      <element id="module-output" name="GlossaryFX" />
-    </root>
-  </artifact>
-</component>
