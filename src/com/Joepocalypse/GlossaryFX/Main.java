@@ -28,7 +28,7 @@ public class Main extends Application {
         final VBox
                 layout1 = new VBox(20),
                 layout2 = new VBox(15),
-                layout3 = new VBox(50);
+                layout3 = new VBox(35);
         layout1.setAlignment(Pos.CENTER);
         layout2.setAlignment(Pos.CENTER);
         layout3.setAlignment(Pos.TOP_CENTER);
@@ -36,12 +36,12 @@ public class Main extends Application {
         final Scene
                 intro = new Scene(layout1, 500, 200),
                 scene2 = new Scene(layout2, 400, 300),
-                finalScene = new Scene(layout3, 400, 600);
+                finalScene = new Scene(layout3, 400, 700);
 
         final CheckBox compact = new CheckBox("Compact");
         final ChoiceBox<Table> choiceBox = new ChoiceBox<>(FXCollections.observableArrayList(Table.values()));
         final Label welcome = new Label(
-                "Welcome to the Table Formatter v2.7!\n" +
+                "Welcome to Table-Format v3.0!\n" +
                         "Please select a .txt file to continue."
         );
         welcome.setAlignment(Pos.CENTER);
@@ -49,13 +49,13 @@ public class Main extends Application {
 
 
         final Label info = new Label(
-                "Please choose your Term/Def separator.\n" +
+                "Please choose your data separator.\n" +
                         "Then you can choose your formatting!"
         );
         info.setTextAlignment(TextAlignment.CENTER);
 
         final TextField field = new TextField();
-        field.setPromptText("Term/Def Separator");
+        field.setPromptText("Data Separator");
         field.setMaxSize(200, 50);
         field.setAlignment(Pos.CENTER);
 
@@ -106,7 +106,7 @@ public class Main extends Application {
 
         window.setResizable(false);
         window.setScene(intro);
-        window.setTitle("Table Formatter | 2.7 FX");
+        window.setTitle("Table-Format | 3.0 | FX");
         window.show();
 
     }
