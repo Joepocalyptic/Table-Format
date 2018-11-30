@@ -28,7 +28,7 @@ public enum Table {
         this.dataClose = dataClose;
     }
 
-    public String generate(String separator, String input, boolean pretty){
+    public final String generate(String separator, String input, boolean pretty){
         final StringBuilder builder = new StringBuilder();
         final String[] lines = input.split("\n");
         builder.append(tableOpen);
@@ -69,5 +69,14 @@ public enum Table {
                 });
         builder.append(tableClose);
         return builder.toString();
+    }
+
+    public final String generate(String separator, String input){
+        return generate(separator, input, false);
+    }
+
+    public static Table fromString(String in){
+        final String checkStr = in.toUpperCase();
+        return Arrays.stream(Table.values()).filter(val -> checkStr.equals(val.name())).findFirst().orElse(null);
     }
 }
